@@ -1,6 +1,6 @@
 # Components
 
-Components are the smallest building blocks of React apps.Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. An component is a plain object describing what we want to appear in terms of the DOM nodes. Components are independent and reusable bits of code. 
+Components are the smallest building blocks of React apps. Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. An component is a plain object describing what we want to appear in terms of the DOM nodes. Components are independent and reusable bits of code. 
 
 A component is combination of 
 - Template using HTML
@@ -9,7 +9,7 @@ A component is combination of
 
 
 
-Conceptually a component is a JavaScript class or function that accepts inputs which are properties(props) and returns a React element that describes how a section of the User Interface should appear.
+Conceptually, a component is a JavaScript class or function that accepts inputs which are properties(props) and returns a React element that describes how a section of the User Interface should appear.
 Components come in two types - 
 - Function components
 - Class components
@@ -54,8 +54,9 @@ const Header = (props: IProps) => {
             </div>
         </div>
     );
- return <h1>Hello, world</h1>;
 };
+
+export default Header;
 
 ```
 
@@ -74,6 +75,7 @@ const Header = (props: IProps) => {
 ## Class Components
 A class component is a JavaScript class that extends React.Component which has a render method. 
 
+index.tsx
 
 ```
 import React, { Component } from "react";
@@ -339,6 +341,8 @@ class UserProfile extends Component<IProps, IState>{
 
 
 }
+
+export default UserProfile;
 
 ```
 
