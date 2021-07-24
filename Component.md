@@ -113,7 +113,7 @@ interface IState {
     }
 }
 
-class Search extends Component<IProps, IState>{
+class UserProfile extends Component<IProps, IState>{
 
 
     private initializeState = () => {
@@ -207,7 +207,7 @@ class Search extends Component<IProps, IState>{
         const { userProfileId, userProfile } = this.props;
         const { loader } = this.state;
 
-        if(loader || !userProfile)
+        if(loader || (userProfileId && !userProfile))
             <Spinner />;
 
         return (

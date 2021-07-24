@@ -22,3 +22,16 @@ In ReactJs documentation, before talking about the fundamentals, they discuss th
 **Auth Module**
 1. Pick Screen
 2. List components along with Props
+
+
+### Groups:
+**Login Form:**
+- Akshay
+- Dharmendra
+- Vijay
+
+
+**Signup Form:**
+- Shipra
+- Sandeep
+- Shreya
