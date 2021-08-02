@@ -25,7 +25,7 @@ Git Local + Server Combination
 
 
 
-> git pull
+> git pull - fetches branch specific changes from server
 - To fetch the latest state of the current branch from github central repo
 (This may get you file conflicts which can be hard to resolve.)
 
@@ -35,6 +35,8 @@ Follow this series of commands for git pull:
 3. Resolve any conflicts with your existing commited changes
 4. git stash pop - Resolve any conflict with the latest pulled code.
 
+> git fetch - repo specific changes from server
+Eg. - To fetch all the branches.
 
 
 
@@ -53,6 +55,11 @@ Stashing (In the form of Stack - LIFO)
 
 Branches
 
+We crate feature branches. Creating branch by developers name is joke of the system. When working on bug fixes, you can create dev name and bug specific branches. E.g. - bug_fixes_g
+
+
+Before starting any feature, we create a new branch for it.
+
 > git checkout -b <branch-name>
 - To create a new branch
 
@@ -63,19 +70,38 @@ Branches
 
 
 
-
 Merging
-- 
-- git merge <branch-name->
+- git merge <branch-name>
 
-Stashing local changes 
+Common branch - dev
+
+Dev1 - Feature1-a
+Dev2 - Feature1-b
+
+Dev1 -
+
+> git checkout dev
+> git pull
+> git checkout Feature1-a
+> git merge dev (to merge the latest changes from other devs. It might cause some conflicts, they will required to be solved, otherwise your code might not work)
+> git add --all
+> got commit -m "merged the feature 1 part a"
+> git push
+
+
+Dev2 -
+
+> git checkout dev
+> git pull
+> git checkout Feature1-b
+> git merge dev (to merge the latest changes from other devs. It might cause some conflicts, they will required to be solved, otherwise your code might not work)
+> git add --all
+> got commit -m "merged the feature 1 part b"
+> git push
 
 
 
 
-
-
-sdfsfsnj
 
 
 
