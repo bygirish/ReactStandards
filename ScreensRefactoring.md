@@ -105,3 +105,45 @@ Dev2 -
 
 
 
+6 guys:
+
+
+create new branch from your current main branch
+> git checkout -b dev
+> git push
+
+> git fetch
+> git checkout dev
+> git pull
+
+screen1
+> git checkout -b screen1
+git
+Work on the code and keep committing
+
+git push
+
+
+screen2
+> git checkout -b screen2
+git
+Work on the code and keep committing
+
+git push
+
+
+
+
+
+
+Akshay - Screen1
+Dharmendra - Screen2
+Shreya - 
+Shipra 
+Sandeep
+Vijay
+Shweta
+
+
+
+
