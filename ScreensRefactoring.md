@@ -81,22 +81,34 @@ Dev2 - Feature1-b
 Dev1 -
 
 > git checkout dev
+
 > git pull
+
 > git checkout Feature1-a
+
 > git merge dev (to merge the latest changes from other devs. It might cause some conflicts, they will required to be solved, otherwise your code might not work)
+
 > git add --all
+
 > got commit -m "merged the feature 1 part a"
+
 > git push
 
 
 Dev2 -
 
 > git checkout dev
+
 > git pull
+
 > git checkout Feature1-b
+
 > git merge dev (to merge the latest changes from other devs. It might cause some conflicts, they will required to be solved, otherwise your code might not work)
+
 > git add --all
+
 > got commit -m "merged the feature 1 part b"
+
 > git push
 
 
