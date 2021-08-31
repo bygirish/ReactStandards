@@ -148,14 +148,4 @@ git push
 
 
 
-Akshay - Screen1
-Dharmendra - Screen2
-Shreya - 
-Shipra 
-Sandeep
-Vijay
-Shweta
-
-
-
 
